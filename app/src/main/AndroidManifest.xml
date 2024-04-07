@@ -17,10 +17,10 @@
         android:theme="@style/Theme.Testing"
         tools:targetApi="31">
         <activity
-            android:name=".log_in"
+            android:name=".news_web"
             android:exported="false" />
         <activity
-            android:name=".stock_list"
+            android:name=".log_in"
             android:exported="false" />
         <activity
             android:name="com.example.firstresponse.coin_page"

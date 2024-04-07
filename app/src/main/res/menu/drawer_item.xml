@@ -3,15 +3,10 @@
     <group
         android:id="@+id/group1">
 
-        <item
-            android:id="@+id/nav_menu"
-            android:title="menu"/>
+
         <item
             android:id="@+id/crypto"
             android:title="crypto"/>
-        <item
-            android:id="@+id/nse"
-            android:title="nse"/>
 
     </group>
     <group
@@ -22,6 +17,9 @@
         <item
             android:id="@+id/about"
             android:title="about"/>
+        <item
+            android:id="@+id/delate_account"
+            android:title="Delate Account"/>
     </group>
 
 </menu>

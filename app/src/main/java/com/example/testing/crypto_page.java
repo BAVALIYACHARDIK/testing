@@ -98,14 +98,14 @@ public class crypto_page extends AppCompatActivity {
                                 ImageView i1 = view.findViewById(R.id.image);
 
 
-                                String name = entity1.getData().getCoins().get(data).getName().toLowerCase(Locale.ROOT);
+//                                String name = entity1.getData().getCoins().get(data).getName().toLowerCase(Locale.ROOT);
                                 String name1 = entity1.getData().getCoins().get(data).getSymbol().toLowerCase();
 
-                                String[] words = name.split("\\s+");
+//                                String[] words = name.split("\\s+");
 
-                                if (words.length > 0) { name = words[0]; }
+//                                if (words.length > 0) { name = words[0]; }
 
-                                Log.d("value",name+name1);
+//                                Log.d("value",name+name1);
                                 String ur = "https://github.com/Pymmdrza/Cryptocurrency_Logos/blob/mainx/PNG/"+name1+".png?raw=true";
 
                                 Glide.with(view).load(ur).error(R.drawable.crypto).into(i1);

@@ -27,7 +27,7 @@ public class News {
 
 
 class Article {
-    private OffsetDateTime publishedAt;
+    private String publishedAt;
     private String author;
     private String urlToImage;
     private String description;
@@ -36,8 +36,8 @@ class Article {
     private String url;
     private String content;
 
-    public OffsetDateTime getPublishedAt() { return publishedAt; }
-    public void setPublishedAt(OffsetDateTime value) { this.publishedAt = value; }
+    public String getPublishedAt() { return publishedAt; }
+    public void setPublishedAt(String value) { this.publishedAt = value; }
 
     public String getAuthor() { return author; }
     public void setAuthor(String value) { this.author = value; }

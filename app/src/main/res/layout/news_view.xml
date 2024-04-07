@@ -4,21 +4,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="7dp"
+    android:id="@+id/newsin"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="120dp"
+
+    android:background="#FDFCFC"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
     tools:ignore="MissingDefaultResource">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:padding="5dp">
-
+        android:padding="1dp">
 
         <ImageView
             android:id="@+id/image"
@@ -31,17 +33,40 @@
             tools:src="@tools:sample/avatars" />
 
 
-
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="145dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="60dp"
+            android:clickable="true"
             android:paddingBottom="15dp"
+            android:text="hiiii and hello"
+
+            android:textSize="17sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/image"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            tools:text="@tools:sample/lorem[3]" />
+            app:layout_constraintTop_toBottomOf="@+id/content"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="276dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="left"
+            android:lines="4"
+            android:maxLines="4"
+            android:text="hi the news is about to the bitcoin and the nasduq stock exchange and also"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.633"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+
 </LinearLayout>
