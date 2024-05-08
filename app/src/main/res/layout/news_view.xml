@@ -1,72 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/newsin"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:padding="16dp">
 
-    android:background="#FDFCFC"
-    android:orientation="vertical"
-    android:paddingLeft="15dp"
-    android:paddingTop="3dp"
-    android:paddingBottom="3dp"
-    tools:ignore="MissingDefaultResource">
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
 
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="16dp" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:padding="1dp">
+    <TextView
+        android:id="@+id/news_description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/news_image"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/news_image"
+        android:maxLines="4"
+        android:text="News description goes here"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+    <TextView
+        android:id="@+id/news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_description"
+        android:layout_alignLeft="@id/news_description"
+        android:layout_marginTop="8dp"
+        android:scrollbarSize="15dp"
+        android:text="Author name"
+        android:textColor="@color/black" />
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/avatars" />
-
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginStart="20dp"
-            android:clickable="true"
-            android:paddingBottom="15dp"
-            android:text="hiiii and hello"
-
-            android:textSize="17sp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/image"
-            app:layout_constraintTop_toBottomOf="@+id/content"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/content"
-            style="@style/Widget.AppCompat.TextView.SpinnerItem"
-            android:layout_width="276dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:gravity="left"
-            android:lines="4"
-            android:maxLines="4"
-            android:text="hi the news is about to the bitcoin and the nasduq stock exchange and also"
-            android:textSize="13sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.633"
-            app:layout_constraintStart_toEndOf="@+id/image"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</LinearLayout>
+</RelativeLayout>

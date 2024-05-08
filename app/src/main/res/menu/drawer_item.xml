@@ -11,12 +11,8 @@
     </group>
     <group
         android:id="@+id/group2" >
-        <item
-            android:id="@+id/setting"
-            android:title="setting"/>
-        <item
-            android:id="@+id/about"
-            android:title="about"/>
+
+
         <item
             android:id="@+id/delate_account"
             android:title="Delate Account"/>
