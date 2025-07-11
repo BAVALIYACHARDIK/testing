@@ -57,7 +57,7 @@ public class home_page extends AppCompatActivity {
                         ObjectMapper objectMapper = new ObjectMapper();
                         final News newsob = objectMapper.readValue(response.body().string(),News.class);
 
-                        Log.d("news aaaaaaaaaaaaaaaaa data",newsob.getArticles().get(0).getContent());
+                        Log.d("news data",newsob.getArticles().get(0).getContent());
 
 
                     }

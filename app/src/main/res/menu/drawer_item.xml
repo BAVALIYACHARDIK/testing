@@ -14,8 +14,8 @@
 
 
         <item
-            android:id="@+id/delate_account"
-            android:title="Delate Account"/>
+            android:id="@+id/delete_account"
+            android:title="Delete Account"/>
     </group>
 
 </menu>
